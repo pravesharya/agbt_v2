@@ -1,0 +1,378 @@
+html {
+  font-size: 10px;
+}
+
+:root {
+  --colorP: #8a2be2; /* Primary color */
+  --colorS: rgba(203, 70, 255, 0.75); /* Secondary color */
+  --fontTitle: "Orbitron";
+  --fontBody: "Montserrat";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  user-select: none;
+  cursor: none;
+}
+
+.CC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.CLM {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-L {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.PG00 {
+  padding: 0px;
+  gap: 00px;
+}
+
+.P10 {
+  padding: 10px;
+}
+.P20 {
+  padding: 20px;
+}
+.G20 {
+  gap: 20px;
+}
+
+#currentPage {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+}
+
+/* Texts-------------------------------------------- */
+
+.text-L {
+  text-align: left;
+}
+.text-R {
+  text-align: right;
+}
+
+/* Section-------------------------------------------- */
+.section {
+  width: 80%;
+  /* border: white 2px solid; */
+  padding: 30px;
+  gap: 30px;
+}
+
+.heading {
+  width: 80%;
+  font-family: var(--fontTitle);
+}
+.h-30 {
+  font-size: 3rem;
+}
+.h-20 {
+  font-size: 2rem;
+}
+
+.body {
+  width: 80%;
+  font-family: var(--fontBody);
+}
+.b-20 {
+  font-size: 2rem;
+}
+.b-16 {
+  font-size: 1.6rem;
+}
+
+.hero-Title {
+  font-size: 5rem;
+}
+
+.sub-Sec {
+  width: 100%;
+}
+
+/* Cards-------------------------------------------- */
+
+.h240 {
+  min-height: 240px;
+}
+.h260 {
+  min-height: 260px;
+}
+.h300 {
+  min-height: 300px;
+}
+.h340 {
+  min-height: 340px;
+}
+.h360 {
+  min-height: 360px;
+}
+.h400 {
+  min-height: 400px;
+}
+
+.cardsss {
+  width: 100%;
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+  /* align-items: center; */
+  justify-items: center;
+}
+.grid-Hero,
+.grid-Contact {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-Glance,
+.grid-Why,
+.grid-Services {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-Brief {
+  grid-template-columns: 1fr 32px 1fr 32px 1fr 32px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.grid-Outro {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border: white 2px solid;
+  border-radius: 1rem;
+  justify-content: flex-start;
+  gap: 20px;
+  transition: all 0.25s ease;
+  background-position: center;
+  background-image: url("./assets/stars.jpg");
+}
+
+.clickable:hover {
+  background-image: url("./assets/space-moving.gif");
+  border: var(--colorP) 2px solid;
+}
+
+.card-I {
+  width: 50%;
+}
+.card-I100 {
+  width: 100px;
+  height: 100px;
+}
+
+.card-H {
+  font-family: var(--fontBody);
+}
+.h-26 {
+  font-size: 2.6rem;
+}
+.h-22 {
+  font-size: 2.2rem;
+}
+
+.card-B {
+  font-size: 1.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.tags {
+  font-family: var(--fontBody);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag {
+  padding: 4px 8px;
+  border-radius: 50px;
+  background-color: var(--colorS);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.next {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--colorP);
+}
+.next img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* ============================================= EXTRAAA ============================================= */
+
+li {
+  padding: 0.4rem;
+}
+
+.shadow {
+  box-shadow: 0.5rem 0.5rem 0px var(--colorS);
+}
+
+.checklist {
+  list-style: none;
+}
+.checklist li {
+  position: relative;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  height: 100%;
+  white-space: normal;
+  overflow: visible;
+}
+.checklist li::before {
+  content: "✔";
+  color: var(--colorP);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* ========================================= Responsive ========================================================================== */
+
+@media screen and (max-width: 1440px) {
+  .card-T {
+    font-size: 1.2rem;
+  }
+
+  .grid-Why {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-Services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #outro {
+    flex-direction: column;
+  }
+  .grid-Glance {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 90%;
+    gap: 20px;
+  }
+  .sub-Sec {
+    width: 80%;
+  }
+
+  .hero-Title {
+    font-size: 4rem;
+  }
+
+  .cardsss {
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .grid-Why {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-Services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-Contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-Brief {
+    grid-template-columns: 1fr 32px 1fr 32px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .section {
+    width: 100%;
+    gap: 1rem;
+  }
+  .sub-Sec {
+    width: 90%;
+  }
+  .hero-Title {
+    font-size: 3rem;
+  }
+  .grid-Hero {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-Glance,
+  .grid-Why {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-Services,
+  .grid-Outro {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-Brief {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .next {
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heading {
+    width: 90%;
+    font-size: 2.8rem;
+    font-family: var(--fontTitle);
+  }
+  .body {
+    width: 90%;
+    font-size: 1.6rem;
+    font-family: var(--fontBody);
+  }
+  .sub-Sec {
+    width: 100%;
+  }
+  .hero-Title {
+    font-size: 2.6rem;
+  }
+
+  .grid-Glance,
+  .grid-Why {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

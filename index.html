@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agboost Tech Consultancy</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="HF.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        cursor: url("./assets/sat.gif") 16 16, auto !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="currentPage">home</div>
+    <div id="header" class="CC HF"></div>
+    <canvas id="space"></canvas>
+
+    <div id="main" class="CC CLM PG00">
+      <div class="section CC CLM" id="hero">
+        <div class="heading h-30 hero-Title">
+          Transform Agriculture & Infrastructure with Satellite Intelligence
+        </div>
+        <div class="body b-20">
+          AgBoost Tech Consultancy delivers innovative, tailored solutions in
+          precision agriculture, geospatial intelligence, and power distribution
+          using cutting-edge satellite data, IoT sensors, and AI/ML models to
+          solve real-world challenges.
+        </div>
+        <div class="cardsss grid-Hero">
+          <div class="card CC CLM">
+            <div class="card-I CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">100m</div>
+            <div class="card-B">High-Resolution Satellite Data</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">24/7</div>
+            <div class="card-B">Real-time Monitoring</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">AI/ML</div>
+            <div class="card-B">Powered Analytics</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section CC CLM" id="glance">
+        <div class="heading h-30">AgBoost at a Glance</div>
+        <div class="body b-20">
+          Key capabilities and metrics that define our expertise in precision
+          agriculture and geospatial intelligence.
+        </div>
+        <div class="cardsss grid-Glance">
+          <div class="card CC CLM">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-22">100m</div>
+            <div class="card-B">High-Resolution Satellite Data</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-22">24/7</div>
+            <div class="card-B">Real-time Monitoring</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-22">Advanced AI/ML</div>
+            <div class="card-B">Powered smart Analytics</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-22">Pan-India</div>
+            <div class="card-B">Nationwide Coverage</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-22">5+ Years</div>
+            <div class="card-B">Domain expertise</div>
+          </div>
+          <div class="card CC CLM">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-22">Less than 24hrs</div>
+            <div class="card-B">Response Time</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section CC CLM" id="why">
+        <div class="heading h-30">Why Choose ATC ?</div>
+        <div class="body b-20">
+          We bridge the gap between raw data and actionable insights through
+          expert-led, adaptive solutions that deliver real results.
+        </div>
+
+        <div class="cardsss grid-Why">
+          <div class="card CC CLM h240">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Tailored Solutions</div>
+            <div class="card-B">
+              Custom-built for your specific agricultural and infrastructure
+              challenges
+            </div>
+          </div>
+          <div class="card CC CLM h240">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Multi-Source Integration</div>
+            <div class="card-B">
+              Combining satellite, IoT, and field data for comprehensive
+              insights
+            </div>
+          </div>
+          <div class="card CC CLM h240">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">AI/ML Expertise</div>
+            <div class="card-B">
+              Advanced analytics and predictive modeling capabilities
+            </div>
+          </div>
+          <div class="card CC CLM h240">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Scalable Technology</div>
+            <div class="card-B">
+              From field-level to regional scale implementations
+            </div>
+          </div>
+          <div class="card CC CLM h240">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Domain Knowledge</div>
+            <div class="card-B">
+              Deep understanding of Indian agriculture and infrastructure
+            </div>
+          </div>
+          <div class="card CC CLM h240">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Proven Results</div>
+            <div class="card-B">
+              Field-tested solutions with measurable outcomes
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section CC CLM" id="services">
+        <div class="heading h-30">Our Specialized Services</div>
+        <div class="body b-20">
+          Comprehensive solutions designed around your unique operational
+          context, delivering actionable insights through expert-led, adaptive
+          service models in agriculture and infrastructure.
+        </div>
+
+        <div class="cardsss grid-Services">
+          <div class="card clickable CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Precision Agriculture</div>
+            <div class="card-B">
+              Field-level solutions for optimized farming including soil
+              moisture tracking, crop health assessment, and yield forecasting
+              using satellite data.
+            </div>
+            <div class="tags">
+              <div class="tag">Satellite Data</div>
+              <div class="tag">IOT Sensors</div>
+              <div class="tag">Soil Moisture</div>
+              <div class="tag">Yield forecasting</div>
+            </div>
+          </div>
+
+          <div class="card clickable CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Geospatial Intelligence</div>
+            <div class="card-B">
+              Actionable intelligence for urban planning, biodiversity
+              monitoring, land use management, and disaster risk reduction using
+              high-resolution satellite data.
+            </div>
+            <div class="tags">
+              <div class="tag">100m Resolution</div>
+              <div class="tag">Remote Sensing</div>
+              <div class="tag">Land Use Analysis</div>
+              <div class="tag">Risk Assessment</div>
+            </div>
+          </div>
+
+          <div class="card clickable CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Power Distribution Solutions</div>
+            <div class="card-B">
+              Support utilities with geospatial asset mapping, SCADA/CAD/CAM/OMS
+              integration, and predictive analytics for grid planning and
+              maintenance.
+            </div>
+            <div class="tags">
+              <div class="tag">SCADA Integration</div>
+              <div class="tag">Grid Planning</div>
+              <div class="tag">Asset Mapping</div>
+              <div class="tag">Predictive Analytics</div>
+            </div>
+          </div>
+
+          <div class="card clickable CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Satellite Data Services</div>
+            <div class="card-B">
+              Multi-source data integration from satellite, sensor, and field
+              sources configured for specific geographic and thematic
+              requirements.
+            </div>
+            <div class="tags">
+              <div class="tag">Multi-source Data</div>
+              <div class="tag">Custom Integration</div>
+              <div class="tag">Real-time Processing</div>
+              <div class="tag">API Services</div>
+            </div>
+          </div>
+
+          <div class="card clickable CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">AI/ML Analytics</div>
+            <div class="card-B">
+              Advanced machine learning models for pattern recognition,
+              predictive analytics, and automated decision-making across
+              agriculture and infrastructure.
+            </div>
+            <div class="tags">
+              <div class="tag">Machine Learning</div>
+              <div class="tag">Pattern Recognition</div>
+              <div class="tag">Predictive Models</div>
+              <div class="tag">Automation</div>
+            </div>
+          </div>
+
+          <div class="card clickable CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Infrastructure Monitoring</div>
+            <div class="card-B">
+              Continuous monitoring and maintenance optimization for critical
+              infrastructure including network efficiency and downtime reduction
+              solutions.
+            </div>
+            <div class="tags">
+              <div class="tag">Network Monitoring</div>
+              <div class="tag">Maintenance Planning</div>
+              <div class="tag">Efficiency Optimization</div>
+              <div class="tag">Performance Analytics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section CC CLM" id="process">
+        <div class="heading h-30">Our Process in Brief</div>
+        <div class="body b-20">
+          From initial consultation to ongoing support, we ensure seamless
+          delivery of your precision agriculture and geospatial intelligence
+          solutions.
+        </div>
+
+        <div class="cardsss grid-Brief">
+          <div class="card CC CLM P20">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Consultation</div>
+            <div class="card-B">
+              Understand your challenges and requirements
+            </div>
+          </div>
+
+          <div class="next CC PG00">
+            <img src="./assets/next.svg" alt="" />
+          </div>
+
+          <div class="card CC CLM P20">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Analysis</div>
+            <div class="card-B">
+              Assess data sources and technical feasibility
+            </div>
+          </div>
+
+          <div class="next CC PG00">
+            <img src="./assets/next.svg" alt="" />
+          </div>
+
+          <div class="card CC CLM P20">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Implementation</div>
+            <div class="card-B">
+              Deploy customized solutions and integrations
+            </div>
+          </div>
+
+          <div class="next CC PG00">
+            <img src="./assets/next.svg" alt="" />
+          </div>
+
+          <div class="card CC CLM P20">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Support</div>
+            <div class="card-B">Ongoing monitoring and optimization</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section PG00 CC" id="outro">
+        <div class="CC CLM sub-Sec text-L">
+          <div class="heading h-30">Bridging Data and Insights</div>
+          <div class="body b-20">
+            AgBoost Tech Consultancy stands at the forefront of India's digital
+            transformation in agriculture and infrastructure. We solve
+            real-world challenges using cutting-edge technologies including
+            remote sensing, high-resolution satellite data, IoT sensors, and
+            AI/ML models.
+            <br /><br />
+            Unlike one-size-fits-all tools, our services are designed around
+            your unique operational context, making them highly effective and
+            practical for addressing specific challenges in agriculture, power
+            distribution, and geospatial intelligence.
+            <br /><br />
+            We bridge the gap between raw data and meaningful insights through
+            expert-led, adaptive service models that deliver measurable results.
+          </div>
+          <div class="body b-20">
+            <ul class="checklist">
+              <li>High-Resolution Satellite Data</li>
+              <li>Real-time IoT Sensor Integration</li>
+              <li>Customized AI/ML Analytics</li>
+              <li>24/7 Monitoring & Support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cardsss grid-Outro sub-Sec">
+          <div class="card CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Multi-Source Integration</div>
+            <div class="card-B">
+              We integrate satellite, sensor, and field data to create
+              comprehensive solutions tailored to your needs.
+            </div>
+          </div>
+
+          <div class="card CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Domain Expertise</div>
+            <div class="card-B">
+              Deep understanding of agriculture and infrastructure challenges
+              with practical, field-tested solutions.
+            </div>
+          </div>
+
+          <div class="card CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">AI/ML Powered</div>
+            <div class="card-B">
+              Advanced analytics using machine learning for pattern recognition
+              and predictive modeling.
+            </div>
+          </div>
+
+          <div class="card CC CLM P20 flex-L">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-H h-26">Scalable Solutions</div>
+            <div class="card-B">
+              From field-level to regional scale, our solutions adapt to your
+              operational requirements.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section PG00 CC CLM" id="contact">
+        <div class="heading h-30">Ready to Transform Your Operations?</div>
+        <div class="body b-20">
+          Let's discuss how AgBoost's satellite intelligence and precision
+          agriculture solutions can address your specific challenges and drive
+          measurable results.
+        </div>
+        <div class="body b-20">=== Get In Touch ===</div>
+
+        <div class="cardsss grid-Contact">
+          <div class="card CC h200 clickable">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="CC CLM PG00 flex-L">
+              <div class="card-H h-26">Email Us</div>
+              <div class="card-B">contact@agboost.in</div>
+            </div>
+          </div>
+
+          <div class="card CC h200 clickable">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="CC CLM PG00 flex-L">
+              <div class="card-H h-26">Phone</div>
+              <div class="card-B">+919904082117</div>
+            </div>
+          </div>
+
+          <div class="card CC h200 clickable">
+            <div class="card-I100 CC">
+              <img src="assets/temp.jpg" alt="" srcset="" />
+            </div>
+            <div class="CC CLM PG00 flex-L">
+              <div class="card-H h-26">Office</div>
+              <div class="card-B">Greater Noida , UP, India</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CC CLM PG00">
+          <div class="heading h-20"><u>Business Hours :</u></div>
+          <br />
+          <ul class="body b-16">
+            <li>Monday - Friday: 9:00 AM - 6:00 PM IST</li>
+            <li>Saturday: 10:00 AM - 2:00 PM IST</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- main-end -->
+    </div>
+
+    <div id="footer" class="CC HF"></div>
+
+    <script src="script.js"></script>
+    <script src="space.js" type="module"></script>
+    <script src="HF.js"></script>
+  </body>
+</html>
