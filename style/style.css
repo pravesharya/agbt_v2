@@ -102,15 +102,23 @@ img {
   gap: 30px;
 }
 
+
 .heading {
   width: 80%;
   font-family: var(--fontTitle);
+}
+.h-50 {
+  font-size: 5rem;
 }
 .h-30 {
   font-size: 3rem;
 }
 .h-20 {
   font-size: 2rem;
+}
+
+.w-80 {
+  width: 80vw;
 }
 
 .body {
