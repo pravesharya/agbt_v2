@@ -5,20 +5,16 @@ function isMobileOrTablet() {
   );
 }
 
-let isPortrait = false;
-if (isMobileOrTablet()) {
-  console.log("Device is mobile or tablet");
-  isPortrait = true;
-} else {
-  console.log("Device is desktop or laptop");
-}
+let current = document.getElementById("currentPage").innerHTML;
+console.log("script.js >> Current page : ", currentPage);
 
-let width = window.innerWidth;
-let height = window.innerHeight;
-
-function initSatelliteCursor(size = 32) {
+function initSatellite(size = 32) {
   const sat = new Image();
-  sat.src = "./assets/sat.gif";
+  if (current == "home") {
+    sat.src = "./assets/sat.gif";
+  } else {
+    sat.src = "../assets/sat.gif";
+  }
   let cursor = document.createElement("div");
   cursor.style.position = "fixed";
   cursor.style.width = `${size}px`;
@@ -44,11 +40,25 @@ function rotateCursor() {
 rotateCursor();
 }
 
-let cameraZ = 2;
-if (isPortrait) {
-  // Portrait mode
-  cameraZ = 3.5;
+function hideSatellite() {
+  const cursor = document.querySelector('div[style*="sat.gif"]');
+  if (cursor) {
+    cursor.style.display = "none";
+  }
+}
+
+function showSatellite() {
+  const cursor = document.querySelector('div[style*="sat.gif"]');
+  if (cursor) {
+    cursor.style.display = "block";
+  }
+}
+
+let isPortrait = false;
+if (isMobileOrTablet()) {
+  console.log("Device is mobile or tablet");
+  isPortrait = true;
 } else {
-  // Landscape Mode
-  initSatelliteCursor(150);
+  console.log("Device is desktop or laptop");
+  initSatellite(150);
 }

@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
 html {
   font-size: 10px;
 }
 
 :root {
-  --colorP: #8a2be2; /* Primary color */
-  --colorS: rgba(203, 70, 255, 0.75); /* Secondary color */
+  --prpl_1: #8a2be2; /* Primary color */
+  --prpl_2: rgba(203, 70, 255, 0.75); /* Secondary color */
   --fontTitle: "Orbitron";
   --fontBody: "Montserrat";
 }
@@ -19,16 +21,23 @@ html {
 }
 
 .CC {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
-  width: 100%;
 }
 
 .CLM {
   flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
 }
 
 .wrap {
@@ -67,6 +76,8 @@ html {
 }
 
 img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -78,6 +89,9 @@ img {
 }
 .text-R {
   text-align: right;
+}
+.text-C {
+  text-align: center;
 }
 
 /* Section-------------------------------------------- */
@@ -148,13 +162,13 @@ img {
   justify-items: center;
 }
 .grid-Hero,
-.grid-Contact {
+.grid-Contact,
+.grid-Services {
   grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-Glance,
-.grid-Why,
-.grid-Services {
+.grid-Why {
   grid-template-columns: repeat(6, 1fr);
 }
 
@@ -175,7 +189,7 @@ img {
   border: white 2px solid;
   border-radius: 1rem;
   justify-content: flex-start;
-  gap: 20px;
+  /* gap: 20px; */
   transition: all 0.25s ease;
   background-position: center;
   background-image: url("./assets/stars.jpg");
@@ -183,7 +197,7 @@ img {
 
 .clickable:hover {
   background-image: url("./assets/space-moving.gif");
-  border: var(--colorP) 2px solid;
+  border: var(--prpl_1) 2px solid;
 }
 
 .card-I {
@@ -219,23 +233,34 @@ img {
 .tag {
   padding: 4px 8px;
   border-radius: 50px;
-  background-color: var(--colorS);
+  background-color: var(--prpl_2);
   color: white;
   font-size: 1.2rem;
 }
 
-.next {
+.btn_32s {
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+}
+
+.btn_32r {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--colorP);
 }
-.next img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
+
+.btn_X {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.pointerDefault :hover {
+  cursor: default;
+}
+.pointer :hover {
+  cursor: pointer;
 }
 
 /* ============================================= EXTRAAA ============================================= */
@@ -245,7 +270,16 @@ li {
 }
 
 .shadow {
-  box-shadow: 0.5rem 0.5rem 0px var(--colorS);
+  box-shadow: 0.5rem 0.5rem 0px var(--prpl_2);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .checklist {
@@ -261,10 +295,19 @@ li {
 }
 .checklist li::before {
   content: "✔";
-  color: var(--colorP);
+  color: var(--prpl_1);
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#hero{
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: white;
 }
 
 /* ========================================= Responsive ========================================================================== */

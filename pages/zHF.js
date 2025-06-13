@@ -3,7 +3,7 @@ window.addEventListener("resize", () => {
 });
 
 function HOME() {
-  window.location.href = "./index.html";
+  window.location.href = "../index.html";
 }
 
 let currentPage = document.getElementById("currentPage").innerHTML;
@@ -36,7 +36,7 @@ logoH.classList.add("PG00");
 logoH.classList.add("logo");
 logoH.classList.add("pointer");
 
-logoH_Img.src = "./assets/logo.svg";
+logoH_Img.src = "../assets/logo.svg";
 logoH_Img.alt = "Company Logo";
 logoH.appendChild(logoH_Img);
 
@@ -48,7 +48,7 @@ const menuBtnImg = document.createElement("img");
 logoH.addEventListener("click", HOME);
 logoH.addEventListener("contextmenu", (e) => {
   e.preventDefault();
-  window.open("./index.html", "_blank");
+  window.open("../index.html", "_blank");
 });
 
 function createHeader() {
@@ -79,7 +79,7 @@ function createHeader() {
     panel.id = "side-panel";
     panel.style.right = "-100%";
 
-    menuBtnImg.src = "./assets/menu.svg";
+    menuBtnImg.src = "../assets/menu.svg";
     menuBtn.appendChild(menuBtnImg);
     menuBtn.classList.add("CC");
     menuBtn.classList.add("btn_32s");
@@ -93,7 +93,7 @@ function createHeader() {
 
     const closeBtn = document.createElement("div");
     const closeBtnImg = document.createElement("img");
-    closeBtnImg.src = "./assets/menu_X.svg";
+    closeBtnImg.src = "../assets/menu_X.svg";
     closeBtn.appendChild(closeBtnImg);
     closeBtn.classList.add("CC");
     closeBtn.classList.add("PG00");
@@ -126,15 +126,15 @@ function createHeader() {
   document.getElementById("home").addEventListener("click", HOME);
 
   document.getElementById("services").addEventListener("click", () => {
-    window.location.href = "./pages/services.html";
+    window.location.href = "./services.html";
   });
 
   document.getElementById("projects").addEventListener("click", () => {
-    window.location.href = "./pages/projects.html";
+    window.location.href = "./projects.html";
   });
 
   document.getElementById("about").addEventListener("click", () => {
-    window.location.href = "./pages/about.html";
+    window.location.href = "./about.html";
   });
 }
 createHeader();
@@ -168,7 +168,7 @@ logoF.classList.add("PG00");
 logoF.classList.add("logo");
 logoF.classList.add("pointer");
 
-logoF_Img.src = "./assets/logo.svg";
+logoF_Img.src = "../assets/logo.svg";
 logoF_Img.alt = "Company Logo";
 logoF.appendChild(logoF_Img);
 
@@ -185,9 +185,8 @@ function createFooter() {
   footerLeft.classList.add("CC");
   footerLeft.classList.add("PG00");
   footerLeft.classList.add("G20");
-
   footerLeft.appendChild(logoF);
-  if(!isPortrait) footerLeft.appendChild(copyright);
+  footerLeft.appendChild(copyright);
 
   footer.appendChild(footerLeft);
   footer.appendChild(socialsss);
@@ -202,8 +201,7 @@ function createFooter() {
     social.id = socialsList[i].toLowerCase();
 
     const img = document.createElement("img");
-    img.src = `./assets/socials/${socialsList[i]}.svg`;
-    // img.src = `./assets/socials/linkedin.svg`;
+    img.src = `../assets/socials/${socialsList[i]}.svg`;
     img.alt = socialsList[i];
     social.appendChild(img);
 
@@ -213,7 +211,7 @@ function createFooter() {
   logoF.addEventListener("click", HOME);
   logoF.addEventListener("contextmenu", (e) => {
     e.preventDefault();
-    window.open("./index.html", "_blank");
+    window.open("../index.html", "_blank");
   });
 
   document.getElementById("whatsapp").addEventListener("click", () => {

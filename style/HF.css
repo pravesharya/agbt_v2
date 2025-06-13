@@ -1,40 +1,33 @@
-/* * {
-  margin: 0;
-  padding: 1rem;
-  gap: 1rem;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  user-select: none;
-  cursor: none;
-}
- */
-
 .HF {
   width: 100vw;
   border: 1px solid black;
-  justify-content: space-between;
   background-color: white;
+  font-family: "montserrat", sans-serif;
 }
 
-header {
+#header {
   height: 80px;
   position: fixed;
   top: 0;
   z-index: 100;
+  /* padding: 0 3rem; */
 }
-footer {
+#footer {
   height: 60px;
+}
+
+.logo {
+  height: 60%;
 }
 
 /* -------------------------------------------------------- */
 .page {
-  padding: 10px;
   font-size: 1.6rem;
   border-bottom: white 4px solid;
 }
 .page:hover {
-  color: var(--colorP);
-  border-bottom: var(--colorP) 4px solid;
+  color: var(--prpl_2);
+  border-bottom: var(--prpl_2) 4px solid;
   cursor: pointer;
 }
 .pageM {
@@ -45,8 +38,8 @@ footer {
 }
 
 /* -------------------------------------------------------- */
-.side-panel {
-  width: 30rem;
+#side-panel {
+  width: 24rem;
   height: 100%;
   position: fixed;
   top: 0;
@@ -60,6 +53,13 @@ footer {
 }
 
 /* -------------------------------------------------------------------------- */
+
+#copyright {
+  font-size: 1.6rem;
+  color: var(--prpl_1);
+  /* font-family: "montserrat", sans-serif; */
+}
+
 .social {
   width: 30px;
   height: 30px;
@@ -68,5 +68,5 @@ footer {
 }
 .social:hover {
   border: 1px solid var(--green);
-  background-color: var(--green);
+  background-color: var(--prpl_1);
 }

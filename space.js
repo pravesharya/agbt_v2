@@ -1,6 +1,11 @@
 import * as THREE from "three";
 import { generateStars } from "./starsss.js";
 
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+let cameraZ = (isPortrait)? 2 : 3.5; 
+
 const canvas = document.querySelector("#space");
 canvas.width = width;
 canvas.height = height;
