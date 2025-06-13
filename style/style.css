@@ -192,11 +192,11 @@ img {
   /* gap: 20px; */
   transition: all 0.25s ease;
   background-position: center;
-  background-image: url("./assets/stars.jpg");
+  background-image: url("../assets/stars.jpg");
 }
 
 .clickable:hover {
-  background-image: url("./assets/space-moving.gif");
+  background-image: url("../assets/space-moving.gif");
   border: var(--prpl_1) 2px solid;
 }
 

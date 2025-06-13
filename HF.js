@@ -157,39 +157,18 @@ footer.addEventListener("mouseout", () => {
   }
 });
 
-const footerLeft = document.createElement("div");
-const logoF = document.createElement("div");
-const logoF_Img = document.createElement("img");
 const copyright = document.createElement("div");
 const socialsss = document.createElement("div");
 
-logoF.classList.add("CC");
-logoF.classList.add("PG00");
-logoF.classList.add("logo");
-logoF.classList.add("pointer");
-
-logoF_Img.src = "./assets/logo.svg";
-logoF_Img.alt = "Company Logo";
-logoF.appendChild(logoF_Img);
-
 function createFooter() {
-  logoF.id = "logoF";
-
-  copyright.innerHTML = "All rights reserved. 2025";
+  copyright.innerHTML = "ATC | All rights reserved 2025";
   copyright.classList.add("CC");
   copyright.id = "copyright";
   
   socialsss.classList.add("CC");
   socialsss.id = "socials";
   
-  footerLeft.classList.add("CC");
-  footerLeft.classList.add("PG00");
-  footerLeft.classList.add("G20");
-
-  footerLeft.appendChild(logoF);
-  if(!isPortrait) footerLeft.appendChild(copyright);
-
-  footer.appendChild(footerLeft);
+  footer.appendChild(copyright);
   footer.appendChild(socialsss);
 
   const socialsList = ["WhatsApp", "Email", "linkedin"];
@@ -209,12 +188,6 @@ function createFooter() {
 
     socialsss.appendChild(social);
   }
-
-  logoF.addEventListener("click", HOME);
-  logoF.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    window.open("./index.html", "_blank");
-  });
 
   document.getElementById("whatsapp").addEventListener("click", () => {
     window.open("https://wa.me/919904082117", "_blank");
