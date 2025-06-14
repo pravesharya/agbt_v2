@@ -2,6 +2,7 @@
 
 html {
   font-size: 10px;
+  background-color: black;
 }
 
 :root {
@@ -97,7 +98,6 @@ img {
 /* Section-------------------------------------------- */
 .section {
   width: 80%;
-  /* border: white 2px solid; */
   padding: 30px;
   gap: 30px;
 }
@@ -246,6 +246,24 @@ img {
   font-size: 1.2rem;
 }
 
+
+/* ============================================= EXTRAAA ============================================= */
+
+
+
+.btn_prpl{
+  border-radius: 5rem;
+  background-color: var(--prpl_1);
+  color: white;
+}
+.btn_prpl:hover{
+  border-radius: 5rem;
+  background-color: var(--prpl_2);
+  text-decoration: underline;
+  color: black;
+}
+
+
 .btn_32s {
   width: 32px;
   height: 32px;
@@ -264,6 +282,7 @@ img {
   right: 1rem;
 }
 
+
 .pointerDefault :hover {
   cursor: default;
 }
@@ -271,7 +290,6 @@ img {
   cursor: pointer;
 }
 
-/* ============================================= EXTRAAA ============================================= */
 
 li {
   padding: 0.4rem;
@@ -317,6 +335,21 @@ li {
   left: 0;
   color: white;
 }
+
+.hero-Img{
+  width: 100%;
+  height: 100%;
+}
+
+#chat {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
 
 /* ========================================= Responsive ========================================================================== */
 
@@ -421,7 +454,6 @@ li {
   .hero-Title {
     font-size: 2.6rem;
   }
-
   .grid-Glance,
   .grid-Why {
     grid-template-columns: repeat(1, 1fr);

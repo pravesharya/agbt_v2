@@ -20,7 +20,12 @@
 
     <div id="main" class="CC CLM PG00">
 
-      <div class="section CC CLM" id="services">
+      <div class="hero-Img">
+        <img src="./assets/hero-services.jpg" alt="service-hero">
+      </div>
+
+      <div class="section CC CLM" id="servicesss">
+
         <div class="heading h-50">Our Specialized Services</div>
         <div class="body b-20">
           Comprehensive solutions designed around your unique operational
@@ -137,6 +142,7 @@
             </div>
           </div>
         </div>
+        
       </div>
 
       <div class="section CC CLM" id="process">
@@ -200,11 +206,24 @@
         </div>
       </div>
 
+      <div class="section CC CLM">
+        <div class="body b-20">
+          Contact us for more information or to schedule a consultation with our
+          experts. We are here to help you...
+        </div>
+        <div id="appointment" class="CC PG20 heading h-30 btn_prpl">Book an appointment</div>
+      </div>
+
     </div>
 
     <div id="footer" class="CC HF"></div>
 
     <script src="../script.js"></script>
     <script src="zHF.js"></script>
+    <script>
+      chatImg.src = "../assets/socials/social-1.svg";
+      const appointment = document.getElementById("appointment");
+      if(isPortrait) appointment.style.fontSize = '1.8rem';
+    </script>
   </body>
 </html>

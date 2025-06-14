@@ -62,3 +62,17 @@ if (isMobileOrTablet()) {
   console.log("Device is desktop or laptop");
   initSatellite(150);
 }
+
+const chat = document.createElement("div");
+const chatImg = document.createElement("img");
+chat.id = "chat";
+chat.classList.add("CC");
+chat.classList.add("PG10");
+chat.classList.add("btn_prpl");
+chatImg.src = "./assets/socials/social-1.svg";
+chat.appendChild(chatImg);
+document.body.appendChild(chat);
+
+chat.addEventListener("click", () => {
+   window.open("https://wa.me/919904082117", "_blank");
+});

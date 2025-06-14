@@ -36,7 +36,7 @@ logoH.classList.add("PG00");
 logoH.classList.add("logo");
 logoH.classList.add("pointer");
 
-logoH_Img.src = "../assets/logo.svg";
+logoH_Img.src = "../assets/logo2.svg";
 logoH_Img.alt = "Company Logo";
 logoH.appendChild(logoH_Img);
 
@@ -181,7 +181,8 @@ function createFooter() {
     social.id = socialsList[i].toLowerCase();
 
     const img = document.createElement("img");
-    img.src = `../assets/socials/${socialsList[i]}.svg`;
+    // img.src = `../assets/socials/${socialsList[i]}.svg`;
+    img.src = `../assets/socials/social-${i+1}.svg`;
     img.alt = socialsList[i];
     social.appendChild(img);
 
@@ -205,8 +206,14 @@ function createFooter() {
 }
 createFooter();
 
+
+
 // ============================================================================
 
 let hfPadding = isPortrait ? "0 20px" : "0 40px";
 header.style.padding = hfPadding;
 footer.style.padding = hfPadding;
+footer.style.paddingRight = "9rem"
+
+const whatsapp = document.getElementById("whatsapp");
+whatsapp.style.display = "none"; // Hide WhatsApp icon for now

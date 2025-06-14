@@ -25,7 +25,8 @@
 
     <div class="section CC CLM text-C" id="hero">
       <div class="heading h-30 hero-Title">
-        Transform your business with <br> Satellite Intelligence
+        Transform your business with <br />
+        Satellite Intelligence
       </div>
       <div class="body b-20">
         AgBoost Tech Consultancy delivers innovative, tailored solutions in
@@ -59,7 +60,6 @@
     </div>
 
     <div id="main" class="CC CLM PG00">
-      
       <div class="section CC CLM" id="glance">
         <div class="heading h-30">AgBoost at a Glance</div>
         <div class="body b-20">
@@ -178,7 +178,7 @@
           </div>
         </div>
       </div>
-<!-- 
+      <!-- 
       <div class="section CC CLM" id="services">
         <div class="heading h-30">Our Specialized Services</div>
         <div class="body b-20">
@@ -297,7 +297,7 @@
           </div>
         </div>
       </div> -->
-<!-- 
+      <!-- 
       <div class="section CC CLM" id="process">
         <div class="heading h-30">Our Process in Brief</div>
         <div class="body b-20">
@@ -444,7 +444,7 @@
         <div class="body b-20">=== Get In Touch ===</div>
 
         <div class="cardsss grid-Contact">
-          <div class="card CC h200 clickable">
+          <div id="contact-email" class="card CC h200 clickable">
             <div class="card-I100 CC">
               <img src="assets/temp.jpg" alt="" srcset="" />
             </div>
@@ -454,7 +454,7 @@
             </div>
           </div>
 
-          <div class="card CC h200 clickable">
+          <div id="contact-phone" class="card CC h200 clickable">
             <div class="card-I100 CC">
               <img src="assets/temp.jpg" alt="" srcset="" />
             </div>
@@ -464,7 +464,7 @@
             </div>
           </div>
 
-          <div class="card CC h200 clickable">
+          <div id="contact-address" class="card CC h200 clickable">
             <div class="card-I100 CC">
               <img src="assets/temp.jpg" alt="" srcset="" />
             </div>
@@ -478,10 +478,19 @@
         <div class="CC CLM PG00">
           <div class="heading h-20 w-80"><u>Business Hours :</u></div>
           <br />
-          <ul class="body b-16">
-            <li>Monday - Friday: 9:00 AM - 6:00 PM IST</li>
-            <li>Saturday: 10:00 AM - 2:00 PM IST</li>
-            <li>Sunday: Closed</li>
+          <ul id="office" class="body b-16">
+            <li class="CC">
+              <div>Monday - Friday :</div>
+              <div>9:00 AM - 6:00 PM IST</div>
+            </li>
+            <li class="CC">
+              <div>Saturday :</div>
+              <div>10:00 AM - 2:00 PM IST</div>
+            </li>
+            <li class="CC">
+              <div>Sunday :</div>
+              <div>Closed</div>
+            </li>
           </ul>
         </div>
       </div>
@@ -494,5 +503,31 @@
     <script src="script.js"></script>
     <script src="HF.js"></script>
     <script src="space.js" type="module"></script>
+    <script>
+      const email = document.getElementById("contact-email");
+      const phone = document.getElementById("contact-phone");
+      const address = document.getElementById("contact-address");
+
+      email.addEventListener("click", () => {
+        window.location.href = "mailto:contact@agboost.in";
+      });
+      phone.addEventListener("click", () => {
+        window.location.href = "tel:+919904082117";
+      });
+      address.addEventListener("click", () => {
+        window.open(
+          "https://www.google.com/maps/place/Greater+Noida,+Uttar+Pradesh/@28.4844,77.5041,12z/data=!3m1!4b1!4m6!3m5!1s0x390cfcf8d2f8e7a9:0x2b5c6d7c8e8e8e8e!8m2!3d28.4844!4d77.5041!16zL20vMDNnZ2Fj",
+          "_blank"
+        );
+      });
+
+      const office = document.getElementById("office");
+      if (isPortrait) {
+        for (const li of office.querySelectorAll("li")) {
+          li.style.flexDirection = "column";
+        }
+      }
+      
+    </script>
   </body>
 </html>
